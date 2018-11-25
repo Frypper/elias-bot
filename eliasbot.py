@@ -1,5 +1,6 @@
 import asyncio
 import aiohttp
+import os
 from discord import Game
 from discord.ext.commands import Bot
 from chatterbot import ChatBot
@@ -38,4 +39,4 @@ async def list_servers():
 
 
 client.loop.create_task(list_servers())
-client.run('TOKEN')
+client.run(os.getenv('TOKEN'))
