@@ -21,7 +21,7 @@ async def on_message(message):
     if message.content.startswith(BOT_PREFIX):
         respond = message.content
         requestBot = chatbot.get_response(respond)
-        await client.send_message(message.channel,"Elias: " + str(requestBot))
+        await client.send_message(message.channel,"" + str(requestBot))
 
 @client.event
 async def on_ready():
