@@ -10,8 +10,7 @@ chatbot = ChatBot(
 )
 
 BOT_PREFIX = ("!!")
-TOKEN = "TOKEN"  
-
+ 
 client = Bot(command_prefix=BOT_PREFIX)
     
 @client.event
@@ -39,4 +38,4 @@ async def list_servers():
 
 
 client.loop.create_task(list_servers())
-client.run(TOKEN)
+client.run('TOKEN')
